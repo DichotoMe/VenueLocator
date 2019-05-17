@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:visibility="invisible"
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:visibility="invisible"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"/>
+
+    <View
+        android:clickable="true"
+        android:layout_gravity="start"
+        android:layout_width="12dp"
+        android:layout_height="match_parent" />
+
+    <View
+        android:clickable="true"
+        android:layout_gravity="end"
+        android:layout_width="12dp"
+        android:layout_height="match_parent" />
+</FrameLayout>
